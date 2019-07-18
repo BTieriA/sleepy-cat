@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy  #org.mariadb.jdbc.Driver
-    jdbc-url: jdbc:log4jdbc:mariadb://sleepycat1.cafe24.com/sleepycat1 
+    jdbc-url: jdbc:log4jdbc:mariadb://localhost:3306/sleepycat1 
     username: sleepycat1
     password: Goodguy1010!
 #    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy  #org.mariadb.jdbc.Driver

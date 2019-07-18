@@ -3,5 +3,8 @@
 
 <mapper namespace="com.cat.sleepy.sleepycat.restapi.sample.dao.SampleDao">
 
+	<select id="searchUsers" resultType="map">
+		SELECT * FROM USER
+	</select>
 
 </mapper>
