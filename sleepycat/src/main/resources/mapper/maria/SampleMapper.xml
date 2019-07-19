@@ -3,8 +3,12 @@
 
 <mapper namespace="com.cat.sleepy.sleepycat.restapi.sample.dao.SampleDao">
 
-	<select id="searchUsers" resultType="map">
-		SELECT * FROM USER
+	<select id="searchUsers" resultType="com.cat.sleepy.sleepycat.restapi.sample.dto.SampleDto">
+		SELECT * FROM `USER` WHERE 1
+	</select>
+	
+	<select id="searchUsers1" resultType="hashmap">
+		SELECT * FROM `USER` WHERE 1
 	</select>
 
 </mapper>

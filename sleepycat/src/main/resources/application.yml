@@ -1,7 +1,7 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    jdbc-url: jdbc:mysql://sleepycat1.cafe24.com:3306/sleepycat1?serverTimezone=UTC
+    driver-class-name: org.mariadb.jdbc.Driver #net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    jdbc-url: jdbc:mariadb://sleepycat1.cafe24.com/sleepycat1 #jdbc:log4jdbc:mariadb://sleepycat1.cafe24.com/sleepycat1 
     username: sleepycat1
     password: Goodguy1010!
 #    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy  #org.mariadb.jdbc.Driver

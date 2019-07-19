@@ -5,8 +5,11 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.cat.sleepy.sleepycat.restapi.sample.dto.SampleDto;
+
 @Mapper
 public interface SampleDao {
 
-	public List<Map<String, Object>> searchUsers();
+	public List<SampleDto> searchUsers();
+	public List<Map<String, Object>> searchUsers1();
 }

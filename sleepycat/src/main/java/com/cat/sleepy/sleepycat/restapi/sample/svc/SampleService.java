@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cat.sleepy.sleepycat.restapi.sample.dao.SampleDao;
+import com.cat.sleepy.sleepycat.restapi.sample.dto.SampleDto;
 
 @Service
 public class SampleService {
@@ -14,7 +15,15 @@ public class SampleService {
 	@Autowired
 	SampleDao sampleDao;
 	
-	public List<Map<String, Object>> searchUsers() {
-		return sampleDao.searchUsers();
+	public List<SampleDto> searchUsers() {
+		List<SampleDto> list = sampleDao.searchUsers();
+		System.out.println("1111");
+		return list;
+	}
+	
+	public List<Map<String, Object>> searchUsers1() {
+		List<Map<String, Object>> list = sampleDao.searchUsers1();
+		System.out.println("1111");
+		return list;
 	}
 }
