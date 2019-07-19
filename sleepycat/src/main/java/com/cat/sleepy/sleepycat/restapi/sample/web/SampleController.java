@@ -17,7 +17,7 @@ public class SampleController {
 	@Autowired
 	SampleService sampleService;
 	
-	@RequestMapping(value="/sleepycat/search", method=RequestMethod.GET)
+	@RequestMapping(value="/sleepycat", method=RequestMethod.GET)
 	@ResponseBody
 	public List<Map<String, Object>> searchSample() {
 		return sampleService.searchUsers();
